@@ -117,7 +117,8 @@ embedding \grid{} viewports within a base graphics plot.
 The dataset is a snapshot of wind speed, wind direction, and temperature
 at several weather stations in the South China Sea, south west of 
 Japan\footnote{Obtained from the CODIAC web site:
-{\tt http://www.joss.ucar.edu/codiac/codiac-www.html}}.
+{\tt http://www.joss.ucar.edu/codiac/codiac-www.html}.  The file
+{\tt chinasea.txt} is in the {\tt gridBase/doc} directory.}.
 \grid{} is used to produce novel plotting symbols for a standard
 base plot.
 
@@ -155,8 +156,8 @@ Now we read in the data and generate a base plot, but plot no points.
 \end{Schunk}
 Now we use \verb|baseViewports()| to align a \grid{} viewport
 with the plot region, and draw the symbols by creating a 
-\grid{} viewport per $(x, y)$ location and rotating the viewport to
-represent the wind direction.
+\grid{} viewport per $(x, y)$ location (we rotate the viewport to
+represent the wind direction).
 
 \begin{Schunk}
 \begin{Sinput}

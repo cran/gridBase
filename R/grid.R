@@ -20,29 +20,29 @@ currentViewportLoc <- function() {
   list(left=left, bottom=bottom, right=right, top=top)
 }
 
-# Prolific use of zapsmall(..., digits=3) because lots of the time
+# Prolific use of round(..., digits=4) because lots of the time
 # calculated values will be intended to be the same, but will
 # differ by tiny amounts due to rounding error.  In particular,
 # we are keen to avoid getting tiny negative values for par()
-# settings.  digits=3 because with the values we are dealing with
+# settings.  digits=4 because with the values we are dealing with
 # two decimal places is plenty of precision.
 
 # Check that a viewport location is within base outer margin setting
 badOMI <- function(cvp, omi, din) {
-  zapsmall(cvp$left - omi[2], digits=3) < 0 ||
-  zapsmall(cvp$bottom - omi[1], digits=3) < 0 ||
-  zapsmall(cvp$right - (din[1] - omi[4]), digits=3) > 0 ||
-  zapsmall(cvp$top - (din[2] - omi[3]), digits=3) > 0
+  round(cvp$left - omi[2], digits=4) < 0 ||
+  round(cvp$bottom - omi[1], digits=4) < 0 ||
+  round(cvp$right - (din[1] - omi[4]), digits=4) > 0 ||
+  round(cvp$top - (din[2] - omi[3]), digits=4) > 0
 }
 
 # Check that a viewport location is within base figure region setting
 badFIG <- function(cvp, fig, omi, din) {
   width <- din[1] - omi[2] - omi[4]
   height <- din[2] - omi[1] - omi[3]
-  zapsmall(cvp$left - (omi[2] + fig[1]*width), digits=3) < 0 ||
-  zapsmall(cvp$bottom - (omi[1] + fig[3]*height), digits=3) < 0||
-  zapsmall(cvp$right - (omi[2] + fig[2]*width), digits=3) > 0 ||
-  zapsmall(cvp$top - (omi[1] + fig[4]*height), digits=3) > 0
+  round(cvp$left - (omi[2] + fig[1]*width), digits=4) < 0 ||
+  round(cvp$bottom - (omi[1] + fig[3]*height), digits=4) < 0||
+  round(cvp$right - (omi[2] + fig[2]*width), digits=4) > 0 ||
+  round(cvp$top - (omi[1] + fig[4]*height), digits=4) > 0
 }
 
 # Return par(omi) settings that correspond to the current
@@ -52,9 +52,9 @@ gridOMI <- function() {
   cvp <- currentViewportLoc()
   # return outer margin values
   din <- par("din")
-  # Do a zapsmall to avoid rounding error
-  omi <- zapsmall(c(cvp$bottom, cvp$left,
-                    din[2] - cvp$top, din[1] - cvp$right), digits=3)
+  # Do a round to avoid rounding error
+  omi <- round(c(cvp$bottom, cvp$left,
+                    din[2] - cvp$top, din[1] - cvp$right), digits=4)
   omi
 }
 
@@ -74,11 +74,11 @@ gridFIG <- function() {
   # par(fig) is c(x1, x2, y1, y2)
   width <- din[1] - omi[2] - omi[4]
   height <- din[2] - omi[1] - omi[3]
-  # Do a zapsmall to avoid rounding error
-  fig <- zapsmall(c((cvp$left - omi[1])/width,
+  # Do a round to avoid rounding error
+  fig <- round(c((cvp$left - omi[1])/width,
                     (cvp$right - omi[1])/width,
                     (cvp$bottom - omi[2])/height,
-                    (cvp$top - omi[2])/height), digits=3)
+                    (cvp$top - omi[2])/height), digits=4)
   fig
 }
 
@@ -104,11 +104,11 @@ gridPLT <- function() {
   height <- innerheight*(fig[4] - fig[3])
   left <- omi[2] + innerwidth*fig[1]
   bottom <- omi[1] + innerheight*fig[3]
-  # Do a zapsmall to avoid rounding error
-  plt <- zapsmall(c((cvp$left - left)/width,
+  # Do a round to avoid rounding error
+  plt <- round(c((cvp$left - left)/width,
                     (cvp$right - left)/width,
                     (cvp$bottom - bottom)/height,
-                    (cvp$top - bottom)/height), digits=3)
+                    (cvp$top - bottom)/height), digits=4)
   plt
 }
 

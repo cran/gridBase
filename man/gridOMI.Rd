@@ -1,4 +1,4 @@
-\name{gridOMI}
+\name{Set Base Plot Regions}
 \alias{gridOMI}
 \alias{gridFIG}
 \alias{gridPLT}
