@@ -1,0 +1,219 @@
+This is pdfTeX, Version 3.14159-13d (Web2C 7.3.1) (format=pdflatex 2001.9.7)  1 OCT 2003 09:04
+**\nonstopmode \input /home/rdev/paul/Research/Rstuff/Integration/gridBase/inst
+/doc/gridBase.tex
+(/home/rdev/paul/Research/Rstuff/Integration/gridBase/inst/doc/gridBase.tex
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2000/05/19 v1.4b Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2000/05/19 v1.4b Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/home/rdev/paul/Research/Rstuff/r-devel/R/share/texmf/Sweave.sty
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2000/08/30 v1.91 Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2000/08/30 v1.91 Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 38.
+))
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 1999/02/16 v1.0l Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/pdftex.def
+File: pdftex.def 2000/06/16 v0.03a graphics/color for pdftex
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf/tex/latex/ae/ae.sty
+Package: ae 1998/11/17 1.0 Almost European Computer Modern
+
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2000/08/30 v1.91 Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2000/08/30 v1.91 Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 38.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 96.
+
+(/usr/share/texmf/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))
+(/usr/share/texmf/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 1998/07/17
+
+Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
+\FV@CodeLineNo=\count88
+\FV@InFile=\read1
+\FV@TabBox=\box26
+\c@FancyVerbLine=\count89
+\FV@StepNumber=\count90
+\FV@OutFile=\write3
+
+No file fancyvrb.cfg.
+) (/home/rdev/paul/Research/Rstuff/r-devel/R/share/texmf/upquote.sty
+Package: upquote 2003/08/11 v1.1 Covington's upright-quote modification to verb
+atim and verb
+
+(/usr/share/texmf/tex/latex/base/textcomp.sty
+Package: textcomp 2000/08/30 v1.91 Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/ts1enc.def
+File: ts1enc.def 1998/06/12 v3.0d (jk/car/fm) Standard LaTeX file
+)))) (gridBase.aux)
+\openout1 = `gridBase.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
+
+(/usr/share/texmf/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 21.
+
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Missing
+\protectiondepth=\count91
+\scratchcounter=\count92
+\scratchdimen=\dimen105
+\scratchskip=\skip43
+\scratchmuskip=\muskip10
+\scratchbox=\box27
+\scratchread=\read2
+\scratchwrite=\write4
+\nextbox=\box28
+\nextdepth=\dimen106
+\everyline=\toks15
+\!!counta=\count93
+\!!countb=\count94
+\recursecounter=\count95
+)
+loading : Context Support Macros / PDF
+\nofMPsegments=\count96
+\nofMParguments=\count97
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 22.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 24.
+ (/usr/share/texmf/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Overfull \hbox (3.16084pt too wide) in paragraph at lines 44--55
+\T1/aer/m/n/10 The \T1/aett/m/n/10 grid-Base \T1/aer/m/n/10 pack-age has one fu
+nc-tion, []\T1/aett/m/n/10 baseViewports()\T1/aer/m/n/10 , that sup-ports addin
+g
+ []
+
+[1
+
+[/usr/share/texmf/dvips/config/pdftex.map]]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 90.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 90.
+
+<gridBase-005.pdf 433.62pt, 433.62pt, obj 12>
+File: gridBase-005.pdf Graphic file (type pdf)
+ <use gridBase-005.pdf> [2 <./gridBase-005.pdf>] <gridBase-009.pdf 433.62pt, 43
+3.62pt, obj 33>
+File: gridBase-009.pdf Graphic file (type pdf)
+
+<use gridBase-009.pdf> [3] [4 <./gridBase-009.pdf>]
+<gridBase-014.pdf 433.62pt, 433.62pt, obj 54>
+File: gridBase-014.pdf Graphic file (type pdf)
+ <use gridBase-014.pdf> [5]
+[6 <./gridBase-014.pdf>] <gridBase-multiplot.pdf 578.15999pt, 289.07999pt,
+obj 74>
+File: gridBase-multiplot.pdf Graphic file (type pdf)
+ <use gridBase-multiplot.pdf>
+Overfull \hbox (16.34999pt too wide) in paragraph at lines 330--331
+[] 
+ []
+
+[7 <./gridBase-multiplot.pdf>] [8] <gridBase-complex.pdf 433.62pt, 433.62pt,
+obj 98>
+File: gridBase-complex.pdf Graphic file (type pdf)
+ <use gridBase-complex.pdf> [9 <./gridBase-complex.pdf>]
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 466.
+
+LaTeX Font Info:    No file TS1aer.fd. on input line 466.
+
+
+LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
+(Font)              using `TS1/cmr/m/n' instead
+(Font)              for symbol `textbullet' on input line 466.
+
+
+Overfull \hbox (11.71576pt too wide) in paragraph at lines 481--487
+[]\T1/aer/m/n/10 There are cer-tain base graph-ics func-tions which mod-ify set
+-tings like []\T1/aett/m/n/10 par(omi)
+ []
+
+
+Overfull \hbox (26.6985pt too wide) in paragraph at lines 508--515
+\T1/aer/m/n/10 The \T1/aett/m/n/10 grid-Base \T1/aer/m/n/10 pack-age is avail-a
+ble from []\T1/aett/m/n/10 CRAN \T1/aer/m/n/10 (e.g., \T1/aett/m/n/10 http://cr
+an.us.r-project.org\T1/aer/m/n/10 ). 
+ []
+
+(gridBase.bbl) [10] (gridBase.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1882 strings out of 50617
+ 24752 string characters out of 692243
+ 66774 words of memory out of 1500001
+ 4841 multiletter control sequences out of 10000+25000
+ 34188 words of font info for 72 fonts, out of 400000 for 1000
+ 14 hyphenation exceptions out of 10000
+ 35i,8n,21p,338b,321s stack positions out of 3000i,500n,3000p,50000b,5000s
+<cmti10.pfb><cmbx10.pfb> </var/lib/texmf/pk/ljfour/jknappen/tc/tcrm1000.600pk
+><cmmi7.pfb><cmex10.pfb><cmmi8.pfb><cmmi10.pfb><cmtt8.pfb><cmr8.pfb><cmr6.pfb><
+cmr7.pfb><cmsltt10.pfb><cmtt12.pfb><cmbx12.pfb><cmtt10.pfb><cmr10.pfb><cmr12.pf
+b><cmr17.pfb>
+Output written on gridBase.pdf (10 pages, 177040 bytes).
