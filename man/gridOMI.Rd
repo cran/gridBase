@@ -7,7 +7,7 @@
 \title{ Set Base Plotting Regions from Grid Viewport }
 \description{
   These functions can be used to align base plotting regions
-  with the current ggrid
+  with the current grid
   viewport.  This can be used to draw base plots within a grid viewport.
 }
 \usage{
