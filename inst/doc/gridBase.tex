@@ -17,7 +17,7 @@
 \title{Integrating Grid Graphics Output \\ with Base Graphics Output}
 \author{Paul Murrell}
 
-\usepackage{/home/rdev/paul/Research/Rstuff/r-devel/R/share/texmf/Sweave}
+\usepackage{/home/rdev/paul/Research/Rstuff/r-devel-grid/R/share/texmf/Sweave}
 \begin{document}
 \maketitle
 
@@ -96,7 +96,7 @@ this step in future versions of \R{}.}.
 \begin{Sinput}
 > vps <- baseViewports()
 > par(new = TRUE)
-> push.viewport(vps$inner, vps$figure, vps$plot)
+> pushViewport(vps$inner, vps$figure, vps$plot)
 \end{Sinput}
 \end{Schunk}
 Finally, we draw rotated labels using 
@@ -107,7 +107,7 @@ Finally, we draw rotated labels using
 > grid.text(c("one", "two", "three", "four", "five", "six", "seven", 
 +     "eight", "nine", "ten"), x = unit(midpts, "native"), y = unit(-1, 
 +     "lines"), just = "right", rot = 60)
-> pop.viewport(3)
+> popViewport(3)
 \end{Sinput}
 \end{Schunk}
 \includegraphics{gridBase-005}
@@ -165,14 +165,14 @@ represent the wind direction).
 > temp <- chinasea$temp/40
 > vps <- baseViewports()
 > par(new = TRUE)
-> push.viewport(vps$inner, vps$figure, vps$plot)
+> pushViewport(vps$inner, vps$figure, vps$plot)
 > for (i in 1:25) {
-+     push.viewport(viewport(x = unit(chinasea$lat[i], "native"), 
++     pushViewport(viewport(x = unit(chinasea$lat[i], "native"), 
 +         y = unit(chinasea$long[i], "native"), angle = chinasea$dir[i]))
 +     novelsym(speed[i], temp[i])
-+     pop.viewport()
++     popViewport()
 + }
-> pop.viewport(3)
+> popViewport(3)
 \end{Sinput}
 \end{Schunk}
 \includegraphics{gridBase-009}
@@ -208,7 +208,6 @@ in {\tt help(plot.dendrogram)}.}.
 
 \begin{Schunk}
 \begin{Sinput}
-> library(mva)
 > data(USArrests)
 > hc <- hclust(dist(USArrests), "ave")
 > dend1 <- as.dendrogram(hc)
@@ -241,12 +240,12 @@ call is just to show the extent of the extra viewport we pushed.}.
 \begin{Sinput}
 > space <- max(unit(rep(1, 50), "strwidth", as.list(rownames(USArrests))))
 > dendpanel <- function(x, y, subscripts, ...) {
-+     push.viewport(viewport(y = space, width = 0.9, height = unit(0.9, 
++     pushViewport(viewport(y = space, width = 0.9, height = unit(0.9, 
 +         "npc") - space, just = "bottom"))
 +     grid.rect(gp = gpar(col = "grey", lwd = 5))
 +     par(plt = gridPLT(), new = TRUE, ps = 10)
 +     plot(dend2$lower[[subscripts]], axes = FALSE)
-+     pop.viewport()
++     popViewport()
 + }
 \end{Sinput}
 \end{Schunk}
@@ -294,7 +293,7 @@ the two regions.
 % Save and restore settings so that vignette building will work(?)
 \begin{Schunk}
 \begin{Sinput}
-> push.viewport(viewport(layout = grid.layout(1, 3, widths = unit(rep(1, 
+> pushViewport(viewport(layout = grid.layout(1, 3, widths = unit(rep(1, 
 +     3), c("null", "cm", "null")))))
 \end{Sinput}
 \end{Schunk}
@@ -302,11 +301,11 @@ We draw a \lattice{} plot in the left region.
 
 \begin{Schunk}
 \begin{Sinput}
-> push.viewport(viewport(layout.pos.col = 1))
+> pushViewport(viewport(layout.pos.col = 1))
 > library(lattice)
 > bwplot <- bwplot(counts ~ outcome | treatment)
 > print(bwplot, newpage = FALSE)
-> pop.viewport()
+> popViewport()
 \end{Sinput}
 \end{Schunk}
 We draw the diagnostic plots in the right region.  Here
@@ -319,13 +318,13 @@ array.}.
 
 \begin{Schunk}
 \begin{Sinput}
-> push.viewport(viewport(layout.pos.col = 3))
+> pushViewport(viewport(layout.pos.col = 3))
 > glm.D93 <- glm(counts ~ outcome + treatment, family = poisson())
 > par(omi = gridOMI(), mfrow = c(2, 2), new = TRUE)
 > par(cex = 0.5, mar = c(5, 4, 1, 2))
 > par(mfg = c(1, 1))
 > plot(glm.D93, caption = "", ask = FALSE)
-> pop.viewport(2)
+> popViewport(2)
 \end{Sinput}
 \end{Schunk}
 \includegraphics[width=5in]{gridBase-multiplot}
@@ -396,7 +395,7 @@ are centred correctly at the appropriate $(x, y)$ locations.}.
 \begin{Sinput}
 > vps <- baseViewports()
 > par(new = TRUE)
-> push.viewport(vps$inner, vps$figure, vps$plot)
+> pushViewport(vps$inner, vps$figure, vps$plot)
 > grid.segments(x0 = unit(c(rep(0, 4), x), rep(c("npc", "native"), 
 +     each = 4)), x1 = unit(c(x, x), rep("native", 8)), y0 = unit(c(y, 
 +     rep(0, 4)), rep(c("native", "npc"), each = 4)), y1 = unit(c(y, 
@@ -430,13 +429,13 @@ we do not move on to a new page.}.
 \begin{Schunk}
 \begin{Sinput}
 > for (i in 1:4) {
-+     push.viewport(viewport(x = unit(x[i], "native"), y = unit(y[i], 
++     pushViewport(viewport(x = unit(x[i], "native"), y = unit(y[i], 
 +         "native"), width = sizemult[i] * maxpiesize, height = sizemult[i] * 
 +         maxpiesize))
 +     grid.rect(gp = gpar(col = "grey", fill = "white", lty = "dashed"))
 +     par(plt = gridPLT(), new = TRUE)
 +     pie(z[i, ], radius = 1, labels = rep("", 2))
-+     pop.viewport()
++     popViewport()
 + }
 \end{Sinput}
 \end{Schunk}
@@ -445,7 +444,7 @@ and restoring the initial \verb|par| settings.
 
 \begin{Schunk}
 \begin{Sinput}
-> pop.viewport(3)
+> popViewport(3)
 > par(oldpar)
 \end{Sinput}
 \end{Schunk}
@@ -540,7 +539,7 @@ the two regions.
 % Save and restore settings so that vignette building will work(?)
 \begin{Schunk}
 \begin{Sinput}
-> push.viewport(viewport(layout = grid.layout(1, 3, widths = unit(rep(1, 
+> pushViewport(viewport(layout = grid.layout(1, 3, widths = unit(rep(1, 
 +     3), c("null", "cm", "null")))))
 \end{Sinput}
 \end{Schunk}
@@ -548,11 +547,11 @@ We draw a \lattice{} plot in the left region.
 
 \begin{Schunk}
 \begin{Sinput}
-> push.viewport(viewport(layout.pos.col = 1))
+> pushViewport(viewport(layout.pos.col = 1))
 > library(lattice)
 > bwplot <- bwplot(weight ~ group)
 > print(bwplot, newpage = FALSE)
-> pop.viewport()
+> popViewport()
 \end{Sinput}
 \end{Schunk}
 We draw the diagnostic plots in the right region.  Here
@@ -565,12 +564,12 @@ array.}.
 
 \begin{Schunk}
 \begin{Sinput}
-> push.viewport(viewport(layout.pos.col = 3))
+> pushViewport(viewport(layout.pos.col = 3))
 > lm.D9 <- lm(weight ~ group)
 > par(omi = gridOMI(), mfrow = c(2, 2), new = TRUE)
 > par(cex = 0.5)
 > par(mfg = c(1, 1))
 > plot(lm.D9, caption = "", ask = FALSE)
-> pop.viewport(2)
+> popViewport(2)
 \end{Sinput}
 \end{Schunk}

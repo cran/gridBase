@@ -1,15 +1,13 @@
 
 # Get the location/size of the current viewport in inches on the device
 currentViewportLoc <- function() {
-  # Get the current viewport
-  cvp <- current.viewport()
   # Get the current viewport transformation
   # This transforms from inches in the current viewport to
   # inches on the device
-  transform <- viewport.transform(cvp)
+  transform <- current.transform()
   # Convert the current viewport's location to inches ...
-  width <- grid.convertWidth(unit(1, "npc"), "inches", valueOnly=TRUE)
-  height <- grid.convertHeight(unit(1, "npc"), "inches", valueOnly=TRUE)
+  width <- convertWidth(unit(1, "npc"), "inches", valueOnly=TRUE)
+  height <- convertHeight(unit(1, "npc"), "inches", valueOnly=TRUE)
   # ... then to inches on the device
   bottomleft <- c(0, 0, 1) %*% transform
   left <- bottomleft[1]/bottomleft[3]
@@ -115,10 +113,9 @@ gridPLT <- function() {
 # Return some gpar settings that can be used to set par() graphical
 # parameters
 gridPAR <- function() {
-  # FIXME:  This should be a simple get.gpar() call
-  #         And will be once r-devel-grid is merged with r-devel
+  gpars <- get.gpar()
   # FIXME:  Need to add font specifications too
-  gpars <- list(col=grid:::get.gpar("col"),
-                lwd=grid:::get.gpar("lwd"),
-                lty=grid:::get.gpar("lty"))
+  gpars <- list(col=gpars$col,
+                lwd=gpars$lwd,
+                lty=gpars$lty)
 }
