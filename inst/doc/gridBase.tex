@@ -17,7 +17,7 @@
 \title{Integrating Grid Graphics Output \\ with Base Graphics Output}
 \author{Paul Murrell}
 
-\usepackage{/home/rdev/paul/Research/Rstuff/r-devel-grid/R/share/texmf/Sweave}
+\usepackage{/home/staff/paul/Research/Rstuff/r-devel-grid/BUILD/share/texmf/Sweave}
 \begin{document}
 \maketitle
 
@@ -87,15 +87,11 @@ leaving off the tick labels.
 \end{Schunk}
 Next we  use \verb|baseViewports()| to 
 create grid viewports that correspond to the base plot and we push
-those viewports\footnote{The {\tt par(new=TRUE)}
-is necessary currently because the first grid action will
-try to move to a new page;  it should be possible to remove
-this step in future versions of \R{}.}.
+those viewports.
 
 \begin{Schunk}
 \begin{Sinput}
 > vps <- baseViewports()
-> par(new = TRUE)
 > pushViewport(vps$inner, vps$figure, vps$plot)
 \end{Sinput}
 \end{Schunk}
@@ -164,7 +160,6 @@ represent the wind direction).
 > speed <- 0.8 * chinasea$speed/14 + 0.2
 > temp <- chinasea$temp/40
 > vps <- baseViewports()
-> par(new = TRUE)
 > pushViewport(vps$inner, vps$figure, vps$plot)
 > for (i in 1:25) {
 +     pushViewport(viewport(x = unit(chinasea$lat[i], "native"), 
@@ -394,7 +389,6 @@ are centred correctly at the appropriate $(x, y)$ locations.}.
 \begin{Schunk}
 \begin{Sinput}
 > vps <- baseViewports()
-> par(new = TRUE)
 > pushViewport(vps$inner, vps$figure, vps$plot)
 > grid.segments(x0 = unit(c(rep(0, 4), x), rep(c("npc", "native"), 
 +     each = 4)), x1 = unit(c(x, x), rep("native", 8)), y0 = unit(c(y, 

@@ -90,14 +90,10 @@ axis(1, at=midpts, labels=FALSE)
 @
 Next we  use \verb|baseViewports()| to 
 create grid viewports that correspond to the base plot and we push
-those viewports\footnote{The {\tt par(new=TRUE)}
-is necessary currently because the first grid action will
-try to move to a new page;  it should be possible to remove
-this step in future versions of \R{}.}.
+those viewports.
 
 <<baseviewport, eval=FALSE>>=
 vps <- baseViewports()
-par(new=TRUE)
 pushViewport(vps$inner, vps$figure, vps$plot)
 
 @
@@ -172,7 +168,6 @@ represent the wind direction).
 speed <- 0.8*chinasea$speed/14 + 0.2 
 temp <- chinasea$temp/40
 vps <- baseViewports()
-par(new=TRUE)
 pushViewport(vps$inner, vps$figure, vps$plot)
 for (i in 1:25) {
   pushViewport(viewport(x=unit(chinasea$lat[i], "native"),
@@ -415,7 +410,6 @@ are centred correctly at the appropriate $(x, y)$ locations.}.
 
 <<plot2, eval=FALSE>>=
 vps <- baseViewports()
-par(new=TRUE)
 pushViewport(vps$inner, vps$figure, vps$plot)
 grid.segments(x0=unit(c(rep(0, 4), x),
                       rep(c("npc", "native"), each=4)),

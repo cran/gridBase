@@ -1,2 +1,4 @@
 
-require(grid)
+.onLoad <- function(lib, pkg)
+{
+}
