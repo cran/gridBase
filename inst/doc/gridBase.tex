@@ -17,7 +17,7 @@
 \title{Integrating Grid Graphics Output \\ with Base Graphics Output}
 \author{Paul Murrell}
 
-\usepackage{/home/staff/paul/Research/Rstuff/r-devel-grid/BUILD/share/texmf/Sweave}
+\usepackage{/home/staff/paul/Research/Rstuff/r-devel-model/BUILD/share/texmf/Sweave}
 \begin{document}
 \maketitle
 
@@ -248,16 +248,7 @@ Finally, we draw a \lattice{} xyplot, using \lattice{} to set up the
 arrangement of panels and strips and our panel function to draw
 a base dendrogram in each panel.
 
-\begin{Schunk}
-\begin{Sinput}
-> library(lattice)
-> xyplot(y ~ x | height, subscripts = TRUE, xlab = "", ylab = "", 
-+     strip = function(...) {
-+         strip.default(style = 4, ...)
-+     }, scales = list(draw = FALSE), panel = dendpanel)
-\end{Sinput}
-\end{Schunk}
-\includegraphics{gridBase-014}
+\includegraphics{gridBase-013}
 
 The \verb|gridPLT()| function is useful for embedding just the
 plot region of a base graphics function (i.e., without labels and

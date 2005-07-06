@@ -2,10 +2,10 @@
 %Å‚Å„ÅœÅ”
 1 0 obj
 <<
-/CreationDate (D:20040824125714)
-/ModDate (D:20040824125714)
+/CreationDate (D:20050706171520)
+/ModDate (D:20050706171520)
 /Title (R Graphics Output)
-/Producer (R 2.0.0)
+/Producer (R 2.2.0)
 /Creator (R)
 >>
 endobj
@@ -36,12 +36,15 @@ endobj
 /Length 8 0 R
 >>
 stream
-1 J 1 j 10 M q
+q
 Q q
 0.745 0.745 0.745 rg
 0.000 0.000 0.000 RG
 0.75 w
 [] 0 d
+1 J
+1 j
+10.00 M
 71.73 76.41 26.89 29.66 re B
 104.00 76.41 26.89 59.31 re B
 136.28 76.41 26.89 88.97 re B
@@ -56,6 +59,9 @@ Q q
 0.000 0.000 0.000 RG
 0.75 w
 [] 0 d
+1 J
+1 j
+10.00 M
 59.04 76.41 m 59.04 372.96 l S
 59.04 76.41 m 51.84 76.41 l S
 59.04 135.72 m 51.84 135.72 l S
@@ -98,13 +104,11 @@ BT
 /F2 1 Tf 6.00 10.39 -10.39 6.00 371.01 42.44 Tm (ten) Tj
 ET
 Q q -216.00 -216.00 864.00 864.00 re W n
-Q q -216.00 -216.00 864.00 864.00 re W n
-Q q -216.00 -216.00 864.00 864.00 re W n
 Q
 endstream
 endobj
 8 0 obj
-2118
+2055
 endobj
 3 0 obj
 <<
@@ -126,7 +130,7 @@ endobj
 9 0 obj
 <<
 /Type /Encoding
-/BaseEncoding /PDFDocEncoding
+/BaseEncoding /WinAnsiEncoding
 /Differences [ 45/minus 96/quoteleft
 144/dotlessi /grave /acute /circumflex /tilde /macron /breve /dotaccent
 /dieresis /.notdef /ring /cedilla /.notdef /hungarumlaut /ogonek /caron /space]
@@ -181,18 +185,18 @@ xref
 0000000000 65535 f 
 0000000020 00000 n 
 0000000162 00000 n 
-0000002565 00000 n 
-0000002648 00000 n 
+0000002502 00000 n 
+0000002585 00000 n 
 0000000211 00000 n 
 0000000294 00000 n 
 0000000374 00000 n 
-0000002545 00000 n 
-0000002785 00000 n 
-0000003041 00000 n 
-0000003138 00000 n 
-0000003240 00000 n 
-0000003345 00000 n 
-0000003454 00000 n 
+0000002482 00000 n 
+0000002722 00000 n 
+0000002979 00000 n 
+0000003076 00000 n 
+0000003178 00000 n 
+0000003283 00000 n 
+0000003392 00000 n 
 trailer
 <<
 /Size 15
@@ -200,5 +204,5 @@ trailer
 /Root 2 0 R
 >>
 startxref
-3532
+3470
 %%EOF

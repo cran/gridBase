@@ -16,18 +16,17 @@ vps <- baseViewports()
 # First grid action will trigger a new page unless we do this
 # Should be able to avoid this yuckiness in the future
 par(new=TRUE)
-push.viewport(vps$inner, vps$figure, vps$plot)
+pushViewport(vps$inner, vps$figure, vps$plot)
 grid.grill(h=y, v=x, default.units="native")
 for (i in 1:4) {
-  push.viewport(viewport(x=unit(x[i], "native"),
+  pushViewport(viewport(x=unit(x[i], "native"),
                          y=unit(y[i], "native"),
                          width=sizemult[i]*maxpiesize,
                          height=sizemult[i]*maxpiesize))
   grid.rect(gp=gpar(col="grey", fill="white", lty="dashed"))
-  gridOMI()
-  par(mar=rep(0, 4), new=TRUE)
+  par(mar=rep(0, 4), omi=gridOMI(), new=TRUE)
   pie(z[i,], radius=1, labels=rep("", 2))
-  pop.viewport()
+  popViewport()
 }
-pop.viewport(3)
+popViewport(3)
 par(omi=rep(0, 4), mar=c(5.1, 5.1, 4.1, 2.1))

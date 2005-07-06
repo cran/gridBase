@@ -260,18 +260,13 @@ Finally, we draw a \lattice{} xyplot, using \lattice{} to set up the
 arrangement of panels and strips and our panel function to draw
 a base dendrogram in each panel.
 
-<<>>=
-library(lattice)
-xyplot(y ~ x | height, subscripts=TRUE, xlab="", ylab="",
-       strip=function(...) { strip.default(style=4, ...) },
-       scales=list(draw=FALSE), panel=dendpanel)
-
 <<echo=FALSE, results=hide, fig=TRUE>>=
-print(
-xyplot(y ~ x | height, subscripts=TRUE, xlab="", ylab="",
-       strip=function(...) { strip.default(style=4, ...) },
-       scales=list(draw=FALSE), panel=dendpanel)
-)
+library(lattice)
+plot.new()
+print(xyplot(y ~ x | height, subscripts=TRUE, xlab="", ylab="",
+             strip=function(...) { strip.default(style=4, ...) },
+             scales=list(draw=FALSE), panel=dendpanel),
+      newpage=FALSE)
 
 @
 

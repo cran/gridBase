@@ -1,0 +1,6 @@
+FROM gridBase_0.4 TO gridBase_0.4-1
+-----------------------------------
+
+1.  Updated demo(gridBase) 
+    Was using very old gridOMI() behaviour which actually set par(omi)
+    rather than just returning a value to use in a call to par()
