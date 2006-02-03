@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.14159-1.10b (Web2C 7.4.5) (format=pdflatex 2003.8.8)  6 JUL 2005 17:15
+This is pdfTeXk, Version 3.14159-1.10b (Web2C 7.4.5) (format=pdflatex 2006.1.23)  3 FEB 2006 09:13
  file:line:error style messages enabled.
 **\nonstopmode \input /home/staff/paul/Research/Rstuff/Integration/gridBase/ins
 t/doc/gridBase.tex
@@ -173,14 +173,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 115.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 115.
- [2 <./gridBase-005.pdf>] <gridBase-009.pdf, id=39, 433.62pt x 433.62pt>
+ [2 <./gridBase-005.pdf>] <gridBase-009.pdf, id=35, 433.62pt x 433.62pt>
 File: gridBase-009.pdf Graphic file (type pdf)
 
 <use gridBase-009.pdf> [3] [4 <./gridBase-009.pdf>]
-<gridBase-013.pdf, id=70, 433.62pt x 433.62pt>
+<gridBase-013.pdf, id=63, 433.62pt x 433.62pt>
 File: gridBase-013.pdf Graphic file (type pdf)
  <use gridBase-013.pdf> [5]
-[6 <./gridBase-013.pdf>] <gridBase-multiplot.pdf, id=86, 578.16pt x 289.08pt>
+[6 <./gridBase-013.pdf>] <gridBase-multiplot.pdf, id=75, 578.16pt x 289.08pt>
 File: gridBase-multiplot.pdf Graphic file (type pdf)
 
 <use gridBase-multiplot.pdf>
@@ -189,7 +189,7 @@ Overfull \hbox (16.34999pt too wide) in paragraph at lines 316--317
  []
 
 [7 <./gridBase-multiplot.pdf>] [8]
-<gridBase-complex.pdf, id=112, 433.62pt x 433.62pt>
+<gridBase-complex.pdf, id=97, 433.62pt x 433.62pt>
 File: gridBase-complex.pdf Graphic file (type pdf)
  <use gridBase-complex.pdf>
 [9 <./gridBase-complex.pdf>]
@@ -215,29 +215,29 @@ Overfull \hbox (26.6985pt too wide) in paragraph at lines 493--500
 
 (./gridBase.bbl) [10] (./gridBase.aux) ) 
 Here is how much of TeX's memory you used:
- 2090 strings out of 95437
- 28345 string characters out of 1188126
+ 2088 strings out of 95437
+ 28279 string characters out of 1190233
  69607 words of memory out of 1000001
  5055 multiletter control sequences out of 10000+50000
  34188 words of font info for 72 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 1000
  35i,8n,21p,339b,320s stack positions out of 1500i,500n,5000p,200000b,5000s
- 134 PDF objects out of 300000
+ 115 PDF objects out of 300000
  0 named destinations out of 131072
  25 words of extra memory for PDF output out of 65536
 {/usr/share/texmf/dvips/tetex/74afc74c.
 enc}</usr/share/texmf/fonts/type1/bluesky/cm/cmti10.pfb>{/usr/share/texmf/dvips
-/tetex/f7b6d320.enc}</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb>
-Warning: pdflatex (file tcrm1000): Font tcrm1000 at 600 not found
-{/usr/share/texmf/dvips/tetex/aae443f0.enc}</usr/share/texmf/fonts/type1/bluesk
-y/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb></usr/share/
-texmf/fonts/type1/bluesky/cm/cmmi8.pfb>{/usr/share/texmf/dvips/tetex/09fbbfac.e
-nc}</usr/share/texmf/fonts/type1/bluesky/cm/cmtt8.pfb></usr/share/texmf/fonts/t
-ype1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr6.pfb></us
-r/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/b
-luesky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsltt10.pfb></usr/
-share/texmf/fonts/type1/bluesky/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/blu
-esky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb></usr/sh
-are/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesk
-y/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on gridBase.pdf (10 pages, 216172 bytes).
+/tetex/f7b6d320.enc}</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb> </var/
+lib/texmf/pk/ljfour/jknappen/tc/tcrm1000.600pk>{/usr/share/texmf/dvips/tetex/aa
+e443f0.enc}</usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb></usr/share/texmf
+/fonts/type1/bluesky/cm/cmex10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmm
+i8.pfb>{/usr/share/texmf/dvips/tetex/09fbbfac.enc}</usr/share/texmf/fonts/type1
+/bluesky/cm/cmtt8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/s
+hare/texmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesk
+y/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/t
+exmf/fonts/type1/bluesky/cm/cmsltt10.pfb></usr/share/texmf/fonts/type1/bluesky/
+cm/cmtt12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/t
+exmf/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/bluesky/cm
+/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf
+/fonts/type1/bluesky/cm/cmr17.pfb>
+Output written on gridBase.pdf (10 pages, 198287 bytes).
