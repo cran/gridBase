@@ -142,9 +142,10 @@ novelsym <- function(speed, temp,
             y=unit(0.5, "npc") - length,
             width=width,
             just="bottom", gp=gpar(fill="grey"))
-  grid.arrows(x=0.5, 
-              y=unit.c(unit(0.5, "npc"), unit(0.5, "npc") + speed*length),
-	      length=unit(3, "mm"), type="closed", gp=gpar(fill="black"))
+  grid.lines(x=0.5, 
+             y=unit.c(unit(0.5, "npc"), unit(0.5, "npc") + speed*length),
+	     arrow=arrow(length=unit(3, "mm"), type="closed"), 
+             gp=gpar(fill="black"))
   grid.points(unit(0.5, "npc"), unit(0.5, "npc"), size=unit(2, "mm"), 
               pch=16)
 }
