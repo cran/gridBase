@@ -154,7 +154,9 @@ novelsym <- function(speed, temp,
 Now we read in the data and generate a base plot, but plot no points.
 
 <<baseplot, eval=FALSE>>=
-chinasea <- read.table("chinasea.txt", header=TRUE)
+chinasea <- read.table(system.file("doc", "chinasea.txt", 
+                                   package="gridBase"),
+                       header=TRUE)
 plot(chinasea$lat, chinasea$long, type="n",
   xlab="latitude", ylab="longitude", 
   main="China Sea Wind Speed/Direction and Temperature")
