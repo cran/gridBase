@@ -31,6 +31,7 @@ baseViewports()
 \section{Warning}{ If you resize the device, all bets are off! }
 \seealso{ \link{Grid}, \code{\link{viewport}} }
 \examples{
+library(grid)
 par(oma=rep(1, 4), mfrow=c(1, 2), xpd=NA)
 plot(1:10)
 vps <- baseViewports()

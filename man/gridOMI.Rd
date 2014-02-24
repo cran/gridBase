@@ -46,6 +46,7 @@ gridPAR()
 \section{Warning}{ If you resize the device, all bets are off! }
 \seealso{ \link{Grid}, \code{\link{viewport}} }
 \examples{
+library(grid)
 opar <- par(no.readonly=TRUE)
 # gridFIG
 grid.newpage()

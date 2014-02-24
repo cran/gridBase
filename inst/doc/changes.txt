@@ -1,4 +1,12 @@
 
+FROM gridBase_0.4-6 TO gridBase_0.4-7
+-------------------------------------
+
+1.  Changed to ONLY using Imports for 'grid' and 'graphics'
+    (no longer Depends on these)
+    (to satisfy stricter R CMD check)
+
+
 FROM gridBase_0.4-5 TO gridBase_0.4-6
 -------------------------------------
 
